@@ -20,10 +20,10 @@ Aria SDK is available for Windows **x32** and **x64** architectures and we ensur
 
 ## Middlewares
 
-The Aria SDK is based on a native library built for Windows and written in C\#.
+The Aria SDK is based on a library built for Windows and written in C\#.
 This library handles low-level communication with the Aria instrument.
-Calling the native libraries directly is possible, but is recommended only for advanced users.
-When using the native library directly, the function signatures and descriptions can be found in the accompanying header file.
+Calling the library directly is possible, but is recommended only for advanced users.
+When using the library directly, the function signatures and descriptions can be found in the accompanying header file.
 The same header file can be used for all versions of the library.
 
 Additionally, more friendly packages and examples are provided for three major programming languages so far:
