@@ -20,15 +20,12 @@ Aria SDK is available for Windows **x32** and **x64** architectures and we ensur
 
 ## Middlewares
 
-The Aria SDK is based on a library built for Windows and written in C\#.
-This library handles low-level communication with the Aria instrument.
-Calling the library directly is possible, but is recommended only for advanced users.
-When using the library directly, the function signatures and descriptions can be found in the accompanying header file.
-The same header file can be used for all versions of the library.
+The Aria SDK is a C# library built for windows and written in C\#.
+The SDK functions are detailed in the manual (**Aria_SDK.pdf**) and an example project is provided in the **csharp** folder.
 
-Additionally, more friendly packages and examples are provided for three major programming languages so far:
-C++, C\# and Python.
-They are collectively referred to as Middleware. Each package has its own folder and within the folder a README file to help with the installation. Please look at the manual for further details.
+It also supports two other major programming languages as additional packages : C++ and Python.
+They are collectively referred to as Middleware. Each package has its own folder and within the folder a README file to help with the installation as well as an example to test it.
+Please look at the manual for further details.
 
 We **strongly recommend** using the Middleware if your programming language of choice is supported.
 It is open source, so you can modify it to suit your needs. To do so, simply clone the current repository and make your changes. 
