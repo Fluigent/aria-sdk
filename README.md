@@ -38,3 +38,7 @@ Here are the package contents:
 | C++          | **main.cpp** example script <br> **aria_sdk_example_cpp.sln** Visual Studio complete solution containing middleware and examples |
 | C#           | **Program.cs** example script <br> **aria-sdk-example.sln** Visual Studio complete solution containing middleware and examples |
 | Python       | **aria-sdk-example.py** example script |
+
+## Support
+
+For any question, please contact support@fluigent.com 
