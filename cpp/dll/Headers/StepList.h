@@ -15,7 +15,7 @@ namespace AriaSDK
 		// Insert a Flush Step at [index]
 		static void InsertFlushStep(int index, int inputReservoir, float flowRate, bool preSignal, SignalType preSignalType, bool postSignal, SignalType postSignalType, int &error);
 		// Insert a Send Signal Step at [index]
-		static void InsertSendSignalStep(int index, std::string message, bool preSignal, SignalType preSignalType, bool postSignal, SignalType postSignalType, int &error);
+		static void InsertSendSignalStep(int index, char* message, bool preSignal, SignalType preSignalType, bool postSignal, SignalType postSignalType, int &error);
 		// Insert a Time Injection Step at [index]
 		static void InsertTimedInjectionStep(int index, int inputReservoir, int destination, float flowRate, int duration_s, bool preSignal, SignalType preSignalType, bool postSignal, SignalType postSignalType, int &error);
 		// Insert a Volume Injection Step at [index]

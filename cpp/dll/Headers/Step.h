@@ -22,7 +22,7 @@ namespace AriaSDK
 		// Set the Parameter for the step at [index] with the given [value:float].
 		static void SetParameter(int index, StepParameter parameterType, float value, int &error);
 		// Set the Parameter for the step at [index] with the given [value:string].
-		static void SetParameter(int index, StepParameter parameterType, std::string value, int &error);
+		static void SetParameter(int index, StepParameter parameterType, char* value, int &error);
 		// Set the Parameter for the step at [index] with the given [value:SignalType].
 		static void SetParameter(int index, StepParameter parameterType, SignalType value, int &error);
 
@@ -33,7 +33,7 @@ namespace AriaSDK
 		// Returns the Parameter value (float) according to the [parameterType] for the step at [index]
 		static float GetFloatParameter(int index, StepParameter parameterType, int &error);
 		// Returns the Parameter value (string) according to the [parameterType] for the step at [index]
-		static std::string GetStringParameter(int index, StepParameter parameterType, int &error);
+		static char* GetStringParameter(int index, StepParameter parameterType, int &error);
 		// Returns the Parameter value (SignalType) according to the [parameterType] for the step at [index]
 		static SignalType GetSignalTypeParameter(int index, StepParameter parameterType, int &error);
 	};

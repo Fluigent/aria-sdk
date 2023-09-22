@@ -24,3 +24,16 @@
 #include "Step.h"
 // Sequence execution monitoring and control
 #include "Monitoring.h"
+
+namespace AriaSDK
+{
+
+	class _declspec(dllexport) Helper
+	{
+	public:
+		// Deallocate a string returned by an Aria SDK function.
+		static void Free(char* arrayToFree);
+		// Deallocate a float array returned by an Aria SDK function.
+		static void Free(float* arrayToFree);
+	};
+}

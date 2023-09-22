@@ -9,7 +9,7 @@ namespace AriaSDK
 	{
 	public:
 		// Returns the DateTime format used in Aria SDK functions.
-		static std::string GetDateTimeFormat();
+		static char* GetDateTimeFormat();
 
 		// Define the Prefill and Preload Flow Rate from the given [flowRatePreset].
 		static void SetPrefillAndPreloadFlowRate(FlowRatePreset flowRatePreset, int &error);
@@ -25,7 +25,7 @@ namespace AriaSDK
 		// Returns [step1] and [step2] Calibration values by reference.
 		static void GetCalibrationValues(float &step1, float &step2, int &error);
 		// Returns a vector containing the Step 3 Calibration values for all Chip Ports.
-		static std::vector<float> GetStep3CalibrationValues(int &error);
+		static float* GetStep3CalibrationValues(int& calibrationValuesCount, int &error);
 		// Returns the maximum number of calibration values in the Calibration Step 3 table.
 		static int GetMaxStep3CalibrationValueCount();
 	};

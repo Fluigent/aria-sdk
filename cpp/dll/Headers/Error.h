@@ -10,11 +10,11 @@ namespace AriaSDK
 	{
 	public:
 		// Returns the Message of the Error with identifier: [errorID]
-		static std::string GetErrorMessage(int errorID);
+		static char* GetErrorMessage(int errorID);
 		// Returns the Severity of the Error with identifier: [errorID]
 		static ErrorSeverity GetErrorSeverity(int errorID);
 		// Returns timestamp at which the error [errorID] occured.
-		static std::string GetErrorTimestamp(int errorID);
+		static char* GetErrorTimestamp(int errorID);
 		// Deletes all previous Error records.
 		// Next Error ID will be [0]
 		static void ResetErrors();

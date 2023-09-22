@@ -10,11 +10,11 @@ namespace AriaSDK
 		static void StartSequence(int &error);
 
 		// Returns the Sequence saved as a JSON string.
-		static std::string GenerateSequenceJSON(int &error);
+		static char* GenerateSequenceJSON(int &error);
 		// Load Sequence from the file at [filePath]
-		static void LoadSequence(std::string filePath, int &error);
+		static void LoadSequence(char* filePath, int &error);
 		// Load Sequence from a JSON String.
-		static void LoadSequenceFromJSON(std::string jsonString, int &error);
+		static void LoadSequenceFromJSON(char* jsonString, int &error);
 
 		// Returns the reservoir used to store the buffer solution.
 		static int GetBufferReservoir(int &error);
@@ -45,10 +45,10 @@ namespace AriaSDK
 		// Returns True if Start ASAP is enabled, false otherwise.
 		static bool IsSequenceStartingASAP(int &error);
 		// Define the time at which the Sequence will be executed if Start ASAP is disabled. 
-		static void SetSequenceStartTime(std::string dateTime, int &error);
+		static void SetSequenceStartTime(char* dateTime, int &error);
 		
 		// Returns the estimated start time of the first Step of the Sequence.
-		static std::string GetSequenceStartTime(int &error);
+		static char* GetSequenceStartTime(int &error);
 		// Returns the estimated total duration of the Sequence.
 		static int GetTotalDuration(int &error);
 	};
