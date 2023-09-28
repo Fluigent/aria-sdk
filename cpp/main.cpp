@@ -12,7 +12,7 @@ void DisplayError(int errorID)
     }
     std::cout << "Error ID:" << errorID << "\n";
     AriaSDK::ErrorSeverity severity = AriaSDK::Error::GetErrorSeverity(errorID);
-    std::string errorMessage = AriaSDK::Error::GetErrorMessage(errorID);
+    char* errorMessage = AriaSDK::Error::GetErrorMessage(errorID);
     switch (severity)
     {
     case AriaSDK::Warning:
@@ -26,6 +26,7 @@ void DisplayError(int errorID)
         std::cout << "[None] " << errorMessage << "\n";
         break;
     }
+    AriaSDK::Helper::Free(errorMessage);
 }
 
 void GenerateAndStartSequence()
@@ -38,6 +39,7 @@ void GenerateAndStartSequence()
     }
     else
     {
+        DisplayError(errorID);
         std::cout << "No Instrument Detected\n";
     }
     std::cout << "------------\n";

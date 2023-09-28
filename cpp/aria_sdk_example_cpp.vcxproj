@@ -96,18 +96,18 @@ copy "$(ProjectDir)\dll\win\x86\aria_sdk_clr.dll" "$(OutDir)aria_sdk_clr.dll"</C
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(MSBuildProjectDirectory)\Headers\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(MSBuildProjectDirectory)\dll\Headers\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>$(CoreLibraryDependencies);%(AdditionalDependencies);$(MSBuildProjectDirectory)\aria_sdk_clr.lib;</AdditionalDependencies>
+      <AdditionalDependencies>$(CoreLibraryDependencies);%(AdditionalDependencies);$(MSBuildProjectDirectory)\dll\win\x86\aria_sdk_clr.lib</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>copy $(ProjectDir)aria_sdk.dll $(OutDir)aria_sdk.dll
-copy $(ProjectDir)aria_sdk_clr.dll $(OutDir)aria_sdk_clr.dll</Command>
+      <Command>copy "$(ProjectDir)\dll\win\x86\aria_sdk.dll" "$(OutDir)aria_sdk.dll"
+copy "$(ProjectDir)\dll\win\x86\aria_sdk_clr.dll" "$(OutDir)aria_sdk_clr.dll"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -136,18 +136,18 @@ copy "$(ProjectDir)\dll\win\x64\aria_sdk_clr.dll" "$(OutDir)aria_sdk_clr.dll"</C
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(MSBuildProjectDirectory)\Headers\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(MSBuildProjectDirectory)\dll\Headers\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>$(CoreLibraryDependencies);%(AdditionalDependencies);$(MSBuildProjectDirectory)\aria_sdk_clr.lib;</AdditionalDependencies>
+      <AdditionalDependencies>$(CoreLibraryDependencies);%(AdditionalDependencies);$(MSBuildProjectDirectory)\dll\win\x64\aria_sdk_clr.lib</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>copy $(ProjectDir)aria_sdk.dll $(OutDir)aria_sdk.dll
-copy $(ProjectDir)aria_sdk_clr.dll $(OutDir)aria_sdk_clr.dll</Command>
+      <Command>copy "$(ProjectDir)\dll\win\x64\aria_sdk.dll" "$(OutDir)aria_sdk.dll"
+copy "$(ProjectDir)\dll\win\x64\aria_sdk_clr.dll" "$(OutDir)aria_sdk_clr.dll"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>

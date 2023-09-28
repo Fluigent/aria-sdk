@@ -26,14 +26,14 @@ namespace AriaSDK
 		static int GetTTLPulseDuration(int &error);
 
 		// Send a TCP Text Message
-		static void SendTCPMessage(std::string message, int &error);
+		static void SendTCPMessage(char* message, int &error);
 		// Start waiting for a TCP Message with the content [awaitedMessage]
-		static void StartAwaitingTCPMessage(std::string awaitedMessage, int &error);
+		static void StartAwaitingTCPMessage(char* awaitedMessage, int &error);
 		// Checks if a TCP message with the content [awaitedMessage] was received
 		// If it was, stops the process waiting for this message
-		static bool CheckTCPMessage(std::string awaitedMessage, int &error);
+		static bool CheckTCPMessage(char* awaitedMessage, int &error);
 		// Stop waiting for a TCP message with the content [awaitedMessage]
-		static void StopAwaitingTCPMessage(std::string awaitedMessage, int &error);
+		static void StopAwaitingTCPMessage(char* awaitedMessage, int &error);
 
 		// Set TCP Mode : Servor or Client
 		static void SetTCPMode(bool enableServer, int &error);
